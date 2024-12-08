@@ -7,7 +7,7 @@ def version():
 
 def cli():
     if len(sys.argv) > 1:
-        if sys.argv[1] == "--version":
+        if sys.argv[1] in ("-v", "--version"):
             version()
             return
     print("Hello, World!")
