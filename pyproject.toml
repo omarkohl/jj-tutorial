@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "todocli"
-version = "0.1.0"
+version = "0.1.0.dev0"
 description = "Personal task tracker"
 authors = ["Omar Kohl <omarkohl@posteo.net>"]
 license = "MIT"
