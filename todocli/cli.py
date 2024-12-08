@@ -10,4 +10,7 @@ def cli():
         if sys.argv[1] in ("-v", "--version"):
             version()
             return
+        else:
+            print("Unknown command")
+            sys.exit(1)
     print("Hello, World!")
