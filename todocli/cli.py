@@ -1,8 +1,8 @@
 import sys
-
+from .__version__ import __version__
 
 def version():
-    print("0.1.0")
+    print(f"todocli {__version__}")
 
 
 def cli():
