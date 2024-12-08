@@ -1,7 +1,9 @@
-# learnjj.codeandbugs.com tutorial code
+# todocli
 
-Ju Jutsu (jj) tutorial code for
-[learnjj.codeandbugs.com](https://learnjj.codeandbugs.com).
+A simple todo list application that can be used from the command line.
 
-This repository contains a small Python application that the readers of the
-tutorial will continue developing locally.
+This application is used for
+the [learnjj.codeandbugs.com](https://learnjj.codeandbugs.com) tutorial, to
+teach using the Ju Jutsu (jj) version control system.
+
+todocli is probably not very useful for anything else.
