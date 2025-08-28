@@ -11,7 +11,7 @@ todocli is probably not very useful for anything else.
 ## Dev Setup
 
 **Note:** If you are following the learnjj tutorial, you don't need to install
-Poetry etc. You don't even need Python. It just means you won't be able to run
+uv etc. You don't even need Python. It just means you won't be able to run
 the _todocli_ application, but since you are only trying to learn jj, that's
 probably not a problem.
 
@@ -19,7 +19,7 @@ probably not a problem.
 
 * Make sure you have Python installed.
   Check [Python for Beginners](https://www.python.org/about/gettingstarted/).
-* [Install Poetry](https://python-poetry.org/docs/#installation)
+* [Install uv](https://docs.astral.sh/uv/getting-started/installation/)
 
 Clone the repository:
 
@@ -31,11 +31,33 @@ cd jj-tutorial
 Set up the virtual environment:
 
 ```bash
-poetry install
+uv sync
+```
+
+For development work, install with development dependencies:
+
+```bash
+uv sync --extra dev
 ```
 
 Try the application:
 
 ```bash
-poetry run todocli --version
+uv run todocli --version
+```
+
+### Development Tools
+
+The project uses [Black](https://black.readthedocs.io/) for code formatting.
+
+Format the code:
+
+```bash
+uv run black todocli/
+```
+
+Check formatting without making changes:
+
+```bash
+uv run black --check todocli/
 ```
