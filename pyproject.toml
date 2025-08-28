@@ -10,8 +10,15 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
 
+[project.optional-dependencies]
+dev = ["black"]
+
 [project.scripts]
 todocli = "todocli.cli:cli"
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
 
 [build-system]
 requires = ["hatchling"]

@@ -34,8 +34,30 @@ Set up the virtual environment:
 uv sync
 ```
 
+For development work, install with development dependencies:
+
+```bash
+uv sync --extra dev
+```
+
 Try the application:
 
 ```bash
 uv run todocli --version
+```
+
+### Development Tools
+
+The project uses [Black](https://black.readthedocs.io/) for code formatting.
+
+Format the code:
+
+```bash
+uv run black todocli/
+```
+
+Check formatting without making changes:
+
+```bash
+uv run black --check todocli/
 ```
