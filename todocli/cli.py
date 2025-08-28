@@ -1,8 +1,10 @@
 import sys
+import os
 from .__version__ import __version__
 
 def version():
-    print(f"todocli {__version__}")
+    app_name = "todocli"
+    print(f"{app_name} {__version__}")
 
 
 def help():
