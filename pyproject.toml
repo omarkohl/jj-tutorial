@@ -1,17 +1,25 @@
-[tool.poetry]
+[project]
 name = "todocli"
 version = "0.1.0.dev0"
 description = "Personal task tracker"
-authors = ["Omar Kohl <omarkohl@posteo.net>"]
-license = "MIT"
+authors = [
+    {name = "Omar Kohl", email = "omarkohl@posteo.net"}
+]
+license = {text = "MIT"}
 readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
 
-[tool.poetry.dependencies]
-python = "^3.12"
+[project.optional-dependencies]
+dev = ["black"]
 
-[tool.poetry.scripts]
+[project.scripts]
 todocli = "todocli.cli:cli"
 
+[tool.black]
+line-length = 88
+target-version = ['py312']
+
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
